@@ -9,10 +9,21 @@
         </a> -->
 
         <img class="poke-image" [src]="pokemon.sprites.front_default" alt="Pokemon">
-            <h3>{{ pokemon.name }}</h3>
+            <h3> <span class="poke-title">{{ pokemon.name }}</span> </h3>
 
             <p>
                 <b>Type: </b> <span class="types"> {{ pokemon.types[0].type.name }} </span>
+            </p>
+
+            <p>
+                <b>Base Experience: </b> <span class="types"> {{ pokemon.base_experience }} </span>
+            </p>
+
+            <p>
+                <b>Ability: </b> 
+                <span class="types">
+                    {{ pokemon.abilities[0].ability.name }}
+                </span>
             </p>
 
             <p>

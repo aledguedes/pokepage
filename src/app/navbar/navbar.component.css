@@ -15,20 +15,12 @@
 }
 
 .first_nav img{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
 }
 
 .first_nav h1 {
     margin-left: 0.5rem;
-}
-
-.bg-color-font-1{
-    color: #ffcc01;
-}
-
-.bg-color-font-2{
-    color: #2f67b1;
 }
 
 .link_itens {
@@ -52,4 +44,15 @@
 .link_itens a:hover {
     border-color: #ffcc01;
     color: #ffcc01;
+}
+
+@media screen and (max-width: 400px) {
+    .first_nav img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .link_itens li{
+        margin-left: 0.5rem;
+    }
 }

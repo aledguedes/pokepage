@@ -9,9 +9,9 @@
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
-    border: 1px solid #94605d;
+    border: 1px solid #2f67b1;
     box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
-    background-color: rgba(204, 204, 204, 0.473);
+    background-color: rgba(247, 243, 243, 0.473);
 }
 
 .box p{
@@ -31,7 +31,7 @@
 h3 {
     text-align: center;
     text-transform: capitalize;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .poke-image {
@@ -43,4 +43,26 @@ h3 {
 
 pagination-controls {
     text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .layout-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .layout-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .layout-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    pagination-controls {
+        font-size: 12px;
+    }
 }

@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: #333;
     height: 110px;
     margin-top: 1rem;
@@ -9,9 +10,15 @@
     color: #FFF;
 }
 
-.footer span{
+.footer .principal{
     font-weight: 600;
-    font-size: 18px;
-    margin-right: 8px;
+    font-size: 20px;
+}
+
+.footer .developer {
+    font-size: 11px;
+    color: #e33d33;
+    font-weight: 400;
+    letter-spacing: .2rem;
 }
 
