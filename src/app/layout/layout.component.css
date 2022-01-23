@@ -1,0 +1,46 @@
+.layout-grid{
+    display: grid;
+    grid-gap: 16px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+}
+
+.layout-grid .box{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #94605d;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+    background-color: rgba(204, 204, 204, 0.473);
+}
+
+.box p{
+    font-size: 14px;
+    margin-left: 1rem;
+}
+
+.box a {
+    text-decoration: none;
+    color: #000;
+}
+
+.box .types {
+    text-transform: capitalize;
+}
+
+h3 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.poke-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+pagination-controls {
+    text-align: center;
+}
