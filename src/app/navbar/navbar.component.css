@@ -15,12 +15,20 @@
 }
 
 .first_nav img{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 .first_nav h1 {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
+}
+
+.bg-color-font-1{
+    color: #ffcc01;
+}
+
+.bg-color-font-2{
+    color: #2f67b1;
 }
 
 .link_itens {
@@ -37,10 +45,11 @@
     text-decoration: none;
     color: #FFF;
     padding: 5px;
-    transition: .4s;
+    transition: all .4s ease-in;
     border-bottom: 1px solid transparent;
 }
 
 .link_itens a:hover {
-    border-color: #FFF;
+    border-color: #ffcc01;
+    color: #ffcc01;
 }
