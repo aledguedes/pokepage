@@ -1,0 +1,24 @@
+<div class="details-container">
+    <div class="box">
+        <h1>{{pokemons.name}} </h1>
+
+        <img class="poke-image" src="https://cdn.traction.one/pokedex/pokemon/{{pokemons.id}}.png" alt="Pokemon">
+
+        <h3>Tipo</h3>
+        <div class="poke_type">
+            <span *ngFor="let item of pokemons.types" class="types type--{{ item.type.name }}">
+                {{ item.type.name }}
+            </span>
+        </div>
+        <div class="data_container">
+            <div class="weight">
+                <h3>Peso</h3>
+                <p>{{ pokemons.weight / 10 }} kg</p>
+            </div>
+            <div class="height">
+                <h3>Altura</h3>
+                <p>{{ pokemons.height *10 }} cm</p>
+            </div>
+        </div>
+    </div>
+</div>

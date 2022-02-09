@@ -6,11 +6,11 @@ import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
-import { LayoutComponent } from './layout/layout.component';
-import { AboutComponent } from './about/about.component';
-import { CardsComponent } from './cards/cards.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LayoutComponent } from './components/layout/layout.component';
+import { AboutComponent } from './components/about/about.component';
+import { DetailsComponent } from './components/details/details.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { CardsComponent } from './cards/cards.component';
     FooterComponent,
     LayoutComponent,
     AboutComponent,
-    CardsComponent
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,

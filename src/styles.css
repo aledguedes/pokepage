@@ -9,6 +9,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html, body {
+    background-color: #e7e9ec;
+    width:100%;
+    height:100%;
+}
+
+.height_body {
+    height:calc(100% - 160px);
+    height:-moz-calc(100% - 160px);
+    height:-webkit-calc(100% - 160px);
+    
+}
+
 .main-container{
     min-height: 70vh;
     margin: 0 3rem;
@@ -20,4 +33,12 @@
 
 .bg-color-font-2{
     color: #2f67b1;
+}
+
+.bg-color-font-3 {
+    color: #DE0622;
+}
+
+a {
+    text-decoration: none;
 }

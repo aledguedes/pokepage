@@ -3,10 +3,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #333;
-    height: 110px;
+    background-color: rgb(8, 8, 8);
+    height: 90px;
     margin-top: 1rem;
-    border-top: 3px solid #111;
+    border-top: 3px solid #005249;
     color: #FFF;
 }
 
@@ -17,8 +17,11 @@
 
 .footer .developer {
     font-size: 11px;
-    color: #e33d33;
+    color: #ffcc01;
     font-weight: 400;
     letter-spacing: .2rem;
 }
 
+sup {
+    font-size: 10px;
+}

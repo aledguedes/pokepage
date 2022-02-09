@@ -10,14 +10,14 @@ export class PokemonService {
   constructor(private http: HttpClient) { }
 
   getPokemons(limit: number, offset: number){
-    return this.http.get(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`)
+    return this.http.get(`https://pokeapi.co/api/v2/pokemon/?limit=${limit}&offset=${offset}`)
   }
 
   getMoreData(name: string){
     return this.http.get(`https://pokeapi.co/api/v2/pokemon/${name}`)
   }
 
-  /* getPokemonOfId(id: number){
+  getPokemonOfId(id: number){
     return this.http.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
-  } */
+  }
 }

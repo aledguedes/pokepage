@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PokemonService } from '../services/pokemon.service';
+import { PokemonService } from '../../services/pokemon.service';
 
 @Component({
   selector: 'app-layout',
@@ -19,8 +19,6 @@ export class LayoutComponent implements OnInit {
   ngOnInit(): void {
     this.getPokemons()
   }
-
-  //Get pokemons
 
   getPokemons() {
     this.data.getPokemons(12, this.page + 0).subscribe((res: any) => {
