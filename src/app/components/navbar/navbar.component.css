@@ -40,6 +40,7 @@
     padding: 5px;
     transition: all .4s ease-in;
     border-bottom: 1px solid transparent;
+    cursor: pointer;
 }
 
 .link_itens a:hover {
@@ -47,13 +48,13 @@
     color: #ffcc01;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .first_nav img{
         width: 35px;
         height: 35px;
     }
 
     .link_itens li{
-        margin-left: 0.5rem;
+        margin-left: 0.1rem;
     }
 }

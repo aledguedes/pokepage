@@ -1,12 +1,19 @@
-<div class="main-container layout-grid">
+<div class="layout-grid">
+
     <div class="box" *ngFor="let pokemon of pokemons | paginate: {
             itemsPerPage: 10,
             currentPage: page,
             totalItems: totalPokemons
         }">
 
+        <div class="box_id">
+            <p>#{{ loadingZero(pokemon.id, 3) }}</p>
+        </div>
+
         <img class="poke-image" src="https://cdn.traction.one/pokedex/pokemon/{{pokemon.id}}.png" alt="Pokemon">
+
         <h3> <span class="poke-title"> {{ pokemon.name }} </span> </h3>
+
         <a routerLink='details/{{pokemon.id}}' class="button">Detalhes</a>
     </div>
 </div>

@@ -1,7 +1,6 @@
 .details-container {
     margin: 1em auto;
-    width: 350px;
-    min-height: 70vh;
+    width: 300px;
 }
 
 .details-container .box {
@@ -40,6 +39,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 1em;
+}
+
+.box .poke_id {
+    background-color: #222;
+    padding: 0.5em 0.8em;
+    border-radius: 3px;
+    color: #2f67b1;
+    font-weight: bold;
 }
 
 .data_container {
@@ -51,7 +59,7 @@
 
 .data_container div{
     margin: 1em 0;
-    padding: 0.5em 1em;
+    padding: 0.5em 2em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +72,7 @@
 
 .box .types {
     text-transform: capitalize;
-    width: 100%;
+    min-width: 120px;
     padding: 0.3em 0.8em;
     border-radius: 5px;
     text-align: center;
@@ -141,4 +149,24 @@
   
 .type--fairy {
     background-color: #e9e;
+}
+
+/* @medias query */
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    .details-container {
+        margin: 1em auto;
+    }
+}
+
+@media screen and (max-width: 700px) and (orientation: landscape) {
+    .details-container {
+        margin: 1em auto;
+    }
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    .details-container {
+        margin: 1em auto;
+    }
 }

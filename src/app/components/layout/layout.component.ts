@@ -13,7 +13,7 @@ export class LayoutComponent implements OnInit {
   page = 1
 
   constructor(
-    private data : PokemonService
+    private data: PokemonService,
   ) { }
 
   ngOnInit(): void {
@@ -32,5 +32,14 @@ export class LayoutComponent implements OnInit {
         })
       });
     })
+  }
+
+  loadingZero(str: string | number, size: number): string {
+    let s = String(str)
+
+    while (s.length < (size || 2)) {
+      s = "0" + s
+    }
+    return s
   }
 }

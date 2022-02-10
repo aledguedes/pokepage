@@ -10,7 +10,7 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 export class DetailsComponent implements OnInit {
 
   pokemons: any
-  id:any
+  id: any
 
   constructor(
     private service: PokemonService,
@@ -19,10 +19,19 @@ export class DetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = this.actRouter.snapshot.paramMap.get('id')
-    this.service.getPokemonOfId(this.id).subscribe( resposta => {
+    this.service.getPokemonOfId(this.id).subscribe(resposta => {
       this.pokemons = resposta
       /* console.log(this.id) */
     })
+  }
+
+  loadingZero(str: string | number, size: number): string {
+    let s = String(str)
+
+    while (s.length < (size || 2)) {
+      s = "0" + s
+    }
+    return s
   }
 
 }

@@ -1,19 +1,27 @@
 .layout-grid {
     display: grid;
-    grid-gap: 16px;
+    grid-gap: 30px;
     padding: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
 }
 
 .layout-grid .box {
     margin-bottom: 0.2rem;
     border-radius: 8px;
-    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.9);
     background-color: #F6F6F6;
     border: 2px solid #677381;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.layout-grid .box_id {
+    text-align: center;
+    background-color: #222;
+    color: #ffcc01;
+    margin: 1em 2em;
+    font-size: 1.5em;
 }
 
 h3 {
@@ -25,14 +33,14 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1.3em auto;
+    margin: 1.5em auto;
     width: auto;
     width: 80px;
     height: 80px;
 }
 
 .box .button {
-    margin: 1em auto;
+    margin: 1.3em auto;
     background-color: rgba(34, 34, 34, 0.9);
     color: #FFF;
     padding: 0.3em 2em;
@@ -64,6 +72,11 @@ pagination-controls {
 }
 
 @media screen and (max-width: 600px) {
+
+    .layout-grid .box {
+        padding: 1.3em 0;
+    }
+
     .layout-grid{
         grid-template-columns: repeat(1, 1fr);
     }
