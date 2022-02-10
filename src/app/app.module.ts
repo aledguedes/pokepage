@@ -26,7 +26,7 @@ import { DetailsComponent } from './components/details/details.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

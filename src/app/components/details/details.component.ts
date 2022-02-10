@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PokemonService } from 'src/app/services/pokemon.service';
 
 @Component({
@@ -14,7 +14,7 @@ export class DetailsComponent implements OnInit {
 
   constructor(
     private service: PokemonService,
-    private actRouter: ActivatedRoute
+    private actRouter: ActivatedRoute,
   ) { }
 
   ngOnInit(): void {

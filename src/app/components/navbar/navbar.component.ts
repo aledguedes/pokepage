@@ -8,15 +8,10 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(
-    private router: Router
-  ) { }
+  constructor( ) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {    
   }
 
-  random() {
-    let x = Math.floor((Math.random() * 800) + 1);
-    this.router.navigate([`details/${x}`])
-  }
+  
 }
